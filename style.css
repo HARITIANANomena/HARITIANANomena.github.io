@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: url('dagocover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+hr {
+    width: 200px;
+    margin: 1px auto;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;    
+    font-size: 2.5em;
+}
+
+h2{
+    text-align: center;
+    margin-top: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.3em;
+}
+
+.ctn_case {
+    margin: 16px auto;
+    display: grid;
+    grid-template: repeat(3, 150px) / repeat(3, 150px);
+    width: 450px;
+    height: 450px;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn_btn {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+}
+
+#cell0 {    
+    margin-left: 25%;
+    color: #0c0202;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.infox {
+    width: 150px;
+    height: 150px;
+    /*background: linear-gradient(to right, #333, #323957);*/
+}
+
+#restart {
+    padding: 10px;
+    background: green;
+    margin-left: 44%;
+    margin-top: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3em;
+    color: #fff;
+    cursor: pointer;
+    transition: transform ease-in .2s;
+}
+
+#restart:hover{
+    background: rgb(0, 34, 128);
+    transform: scale(1.1);
+}
